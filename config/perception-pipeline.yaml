@@ -1,11 +1,9 @@
 ENV:
-  sim_path: ''
+  sim_path: 'simulator/goseek-v0.1.4.x86_64'
   ground_truth_mode: false
-  metadata_port: 9007
-  image_port: 9008
 
 EPISODE:
-  scenes: [3, 4, 5, 5]
+  scenes: [3, 4, 5, 1]
   n_targets: [30, 30, 30, 30]
   episode_length: [400, 400, 400, 400]
   random_seeds: [10, 1, 5, 6]

@@ -21,8 +21,14 @@
 
 from goseek-base:latest
 
+RUN apt-get update && apt-get install -y cmake libopenmpi-dev python3-dev zlib1g-dev libglib2.0-0 libgtk2.0-dev
+RUN pip install stable-baselines
+RUN pip install tensorflow-gpu==1.13.1
+
 WORKDIR /goseek-challenge
 
 COPY baselines/agents.py baselines/agents.py
 
-COPY baselines/config/random-agent.yaml agent.yaml
+COPY baselines/config/ppo-agent.yaml agent.yaml
+
+COPY goseek-ppo-lstm-forwardreward.pkl goseek-ppo-lstm-forwardreward.pkl

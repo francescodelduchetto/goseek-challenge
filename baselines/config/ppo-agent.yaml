@@ -1,2 +1,2 @@
 name: StableBaselinesPPO
-weights: 'ppo-weights.pkl'  # PUT WEIGHTS AT GOSEEK-CHALLENGE ROOT
+weights: 'goseek-ppo-lstm-forwardreward-scorepenalty-second.pkl'  # PUT WEIGHTS AT GOSEEK-CHALLENGE ROOT
